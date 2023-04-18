@@ -1,0 +1,18 @@
+extends layout.pug 
+
+block head
+   // link(rel="stylesheet", href="/cities.css")
+
+block content
+    h2 Cities 
+    table
+        thead 
+            th.Country Country
+            th.city Cities
+            th.number population
+        tbody
+            for row in rows
+                tr
+                    td #{row.CountryCode}
+                    td #{row.Name}
+                    td #{row.Population}
